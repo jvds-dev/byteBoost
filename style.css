@@ -215,6 +215,9 @@ header nav ul li a {
         margin: 12px 12px;
         /* border: 0; */
     }
+    .hero-section{
+        background-attachment: unset;
+    }
 
     .hero-section .container {
         /* background: red; */
