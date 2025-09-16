@@ -129,6 +129,14 @@ header nav ul li a {
     font-weight: 400;
     line-height: normal;
 }
+.hero-section h1 span {
+    /* color: #FFF; */
+    font-family: Sora;
+    /* font-size: 56px; */
+    /* font-style: normal; */
+    font-weight: bolder;
+    /* line-height: normal; */
+}
 
 .hero-section p {
     color: #FFF;
