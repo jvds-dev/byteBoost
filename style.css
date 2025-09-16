@@ -1,5 +1,144 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 12px 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.66);
+    backdrop-filter: blur(30px);
+    padding: 12px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 54px;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    height: 44px;
+    width: auto;
+}
+
+.cta {
+    color: #FFF;
+    text-align: center;
+    font-family: Sora;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    width: 186px;
+    height: 44px;
+    border-radius: 8px;
+    background: linear-gradient(98deg, #000261 -35.55%, #2F00FF 43.96%);
+    border: none;
+}
+
+main {
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 128px 0;
+    min-height: 2000px;
+}
+
+.hero-section {
+    background: green;
+    display: flex;
+    max-width: 1366px;
+    /* margin: 0 auto; */
+    /* padding: 0 128px; */
+    width: 100%;
+}
+
+.hero-section .container {
+    display: flex;
+}
+
+.hero-section .left-container {
+    /* background: yellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.hero-section h1 {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-section p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cta-container{
+    margin-top: 22px;
+    display: flex;
+    gap: 22px;
+}
+
+.hero-section button:last-child {
+    border: none;
+    background: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.hero-section .right-container {
+    /* background: green; */
+    width: 50%;
+    display: flex;
+}
+
+.right-container img {
+    width: 100%;
+    height: auto;
+    /* width: auto; */
 }
