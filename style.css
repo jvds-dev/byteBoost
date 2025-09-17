@@ -29,7 +29,6 @@ header {
 header .container {
     max-width: 1110px;
     width: 100%;
-    /* height: 100%; */
     margin: 12px 128px;
     display: flex;
     justify-content: space-between;
@@ -62,10 +61,7 @@ header nav ul li a {
 }
 
 .logo {
-    /* height: 44px; */
     height: clamp(28px, 4vw, 44px);
-    /* width: clamp(22px, 2vw, 44px); */
-    /* width: auto; */
 }
 
 .menu {
@@ -187,21 +183,22 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, #000 0%, #05041C 100%);
+    /* background: linear-gradient(180deg, #000 0%, #05041C 100%); */
+    /* background: #050505; */
+    background: linear-gradient(180deg, #000, #050505);
     padding-bottom: 80px;
 }
 
 
-.benefits-section h2 {
+.benefits-section h2, .courses-section h2 {
     color: #FFF;
     text-align: center;
     font-family: Sora;
-    /* font-size: 36px; */
     font-size: clamp(18px, 4vw, 32px);
     padding: 0 12px;
     font-style: normal;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .benefits-section .container {
@@ -209,7 +206,6 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    /* padding: 0 10% 10% 10%; */
     margin: 0;
 }
 
@@ -222,9 +218,7 @@ a {
 }
 
 .benefit-card {
-    /* background: #222; */
     padding: 1rem;
-    /* border-radius: 12px; */
     text-align: center;
     gap: 1rem;
     display: flex;
@@ -235,9 +229,7 @@ a {
 }
 
 .benefit-card img {
-    /* width: 48px; */
     width: clamp(24px, 4vw, 48px);
-    /* height: clamp(24px, 2vw, 48px); */
     height: auto;
     flex-shrink: 0;
 }
@@ -261,6 +253,95 @@ a {
     line-height: 1.4;
 }
 
+.courses-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    background-image: url(assets/coursesBg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.courses-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #00000077 0%, #05041ce1 100%);
+    z-index: -1;
+    transform: rotateX(180deg);
+}
+
+.courses-section .container {
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+}
+
+.courses-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: #151515;
+    padding-bottom: 32px;
+
+    width: 312px;
+    width: clamp(100px, 65vw, 302px);
+    height: auto;
+    flex-shrink: 0;
+
+    border-radius: 12px;
+    background: #05041C;
+    box-shadow: 0 4px 15.2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.course-card .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 22px;
+}
+
+.course-card h3 {
+    color: #FFF;
+    font-family: Sora;
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.course-card p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-size: clamp(8px, 2vw, 14px);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.banner {
+    width: 302px;
+    width: clamp(100px, 65vw, 302px);
+    flex-shrink: 0;
+}
 
 @media (max-width: 1024px) {
     header nav ul {
@@ -306,6 +387,17 @@ a {
         grid-column: 1 / -1;
         justify-self: center;
         max-width: 300px;
+    }
+
+    .courses-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px){
+    .courses-cards-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
