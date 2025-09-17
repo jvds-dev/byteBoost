@@ -323,7 +323,7 @@ a {
 .course-card h3 {
     color: #FFF;
     font-family: Sora;
-    font-size: clamp(12px, 2vw, 16px);
+    font-size: clamp(16px, 3vw, 20px);
     font-style: normal;
     font-weight: 700;
 }
@@ -332,7 +332,7 @@ a {
     color: #FFF;
     font-family: Inter;
     font-size: 14px;
-    font-size: clamp(12px, 2vw, 14px);
+    font-size: clamp(14px, 3vw, 18px);
     font-style: normal;
     font-weight: 400;
 }
