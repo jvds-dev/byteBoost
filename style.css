@@ -100,7 +100,7 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     /* background: green; */
-    background-image: url(assets/heroBg.png);
+    background-image: url(assets/heroBg.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
