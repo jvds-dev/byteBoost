@@ -493,7 +493,7 @@ a {
     }
 
     .courses-section {
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         background-position: center;
     }
 
