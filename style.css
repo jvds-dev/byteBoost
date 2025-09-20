@@ -640,7 +640,7 @@ h2 {
     width: 414px;
 }
 
-footer{
+footer {
     background: #000;
     width: 100%;
     height: 100%;
@@ -738,12 +738,61 @@ footer{
         margin-top: 100px;
     }
 
-    header nav ul {
-        display: none;
+    .logo {
+        position: absolute;
+        top: 14px;
+        left: 1rem;
     }
 
     .menu {
-        display: block;
+        position: absolute;
+        top: 14px;
+        right: 1rem;
+    }
+
+    header .container{
+        height: 54px;
+        transition: all .3s ease;
+        overflow: hidden;
+        position: relative;
+    }
+    header .container.open{
+        height: 50vh;
+    }
+
+    header .container nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    header .container nav ul{
+        opacity: 0;
+        pointer-events: none;
+        /* display: flex; */
+        flex-direction: column;
+        transition: all 0s ease;
+        /* transform: translateY(100%); */
+        /* position: absolute; */
+        gap: 2rem;
+    }
+    header .container.open nav ul{
+        transition: all .6s ease;
+        /* transform: translateY(10%); */
+    }
+
+    header .container.open nav ul{
+        opacity: 1;
+    }
+
+
+    .menu {
+        display: flex;
     }
 
     .hero-section .left-container {
@@ -839,23 +888,29 @@ footer{
 }
 
 @media (max-width: 300px) {
-    .final-section .cta-container::before, .final-section .cta-container::after{
+
+    .final-section .cta-container::before,
+    .final-section .cta-container::after {
         display: none;
     }
-    .final-section .container{
+
+    .final-section .container {
         padding: 0;
     }
-    .final-section .cta-container{
+
+    .final-section .cta-container {
         width: 100vw;
         height: 100%;
         border-radius: 0;
         padding: 4rem 1rem;
     }
-    .final-section .cta-container h2{
+
+    .final-section .cta-container h2 {
         font-size: 18px;
         /* font-size: clamp(12px, 3vw, 20px); */
     }
-    .final-section .cta-container p{
+
+    .final-section .cta-container p {
         font-size: 12px;
     }
 }
