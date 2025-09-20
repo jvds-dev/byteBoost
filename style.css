@@ -639,6 +639,16 @@ h2 {
     width: 414px;
 }
 
+footer{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (max-width: 1080px) {
     .pricing-cards-container {
