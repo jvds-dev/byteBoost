@@ -62,6 +62,7 @@ header nav ul li a {
 
 .logo {
     height: clamp(28px, 4vw, 44px);
+    cursor: pointer;
 }
 
 .menu {
