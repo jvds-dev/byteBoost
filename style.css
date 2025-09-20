@@ -73,7 +73,7 @@ header nav ul li a {
     border: none;
 }
 
-.cta {
+.cta-btn {
     color: #FFF;
     text-align: center;
     font-family: Sora;
@@ -139,7 +139,7 @@ header nav ul li a {
     line-height: normal;
 }
 
-.cta-container {
+.cta-btn-container {
     margin-top: 22px;
     display: flex;
     gap: 4%;
@@ -269,13 +269,14 @@ h2 {
     /* background-size: cover; */
     z-index: -1;
     /* background: linear-gradient(180deg, #050505, #05041C); */
-    
+
     background-color: #000616;
     background-image:
-    linear-gradient(#012CFF33 2px, transparent  2px),
-    linear-gradient(90deg, #012CFF33 2px, transparent 2px);
+        linear-gradient(#012CFF33 2px, transparent 2px),
+        linear-gradient(90deg, #012CFF33 2px, transparent 2px);
     background-size: 2rem 2rem;
 }
+
 .courses-section::after {
     content: "";
     position: absolute;
@@ -283,7 +284,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
     z-index: -1;
     transform: rotateX(180deg);
 }
@@ -514,6 +515,131 @@ h2 {
     padding: 8px 16px;
 }
 
+.final-section {
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #05041C;
+    /* background: linear-gradient(#000144, #000); */
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.final-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:
+        linear-gradient(160deg,
+            rgba(9, 15, 82, 0.9) 0%,
+            /* azul forte no canto superior esquerdo */
+            rgba(9, 15, 82, 0) 40%,
+            /* começa a sumir */
+            rgba(9, 15, 82, 0) 60%,
+            /* centro bem transparente */
+            rgba(9, 15, 82, 0.9) 100%
+            /* azul forte no canto inferior direito */
+        )
+}
+
+.final-section .container {
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+    padding: 32px;
+    /* width: 100%; */
+}
+
+.final-section .cta-container {
+    background: green;
+    width: 585px;
+    height: 500px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 32px;
+    border-radius: 22px;
+
+    background: rgba(5, 4, 28, 0.73);
+    box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(16px);
+
+    position: relative;
+}
+
+.final-section .cta-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: red; */
+    background-image: url(assets/BB.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-100%) scaleX(-1);
+}
+
+.final-section .cta-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: red; */
+    background-image: url(assets/BB.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(100%);
+}
+
+.cta-container h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Sora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 450px;
+    /* background: red; */
+    text-align: center;
+}
+
+.cta-container h2 span {
+    font-weight: 700;
+}
+
+.cta-container h2 span:first-child {
+    color: #012CFF;
+}
+
+.cta-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 414px;
+}
+
+
 @media (max-width: 1080px) {
     .pricing-cards-container {
         display: grid;
@@ -562,7 +688,7 @@ h2 {
         margin-top: 100px;
     }
 
-    .cta-container {
+    .cta-btn-container {
         margin-top: 2%;
     }
 
@@ -630,13 +756,13 @@ h2 {
         font-size: clamp(1px, 5vw, 12px);
     }
 
-    .hero-section .left-container .cta-container {
+    .hero-section .left-container .cta-btn-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
     }
 
-    .cta-container .cta {
+    .cta-btn-container .cta-btn {
         font-size: clamp(6px, 3vw, 16px);
     }
 
