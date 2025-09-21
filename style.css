@@ -742,6 +742,7 @@ footer {
         position: absolute;
         top: 14px;
         left: 1rem;
+        z-index: 1000;
     }
 
     .menu {
