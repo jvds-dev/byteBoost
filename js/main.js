@@ -18,8 +18,6 @@ const scrollToSection = (btn) => {
     }
 };
 
-
-
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("open")
 })

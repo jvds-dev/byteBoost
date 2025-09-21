@@ -756,7 +756,16 @@ footer {
         right: 1rem;
     }
 
+    header {
+        padding: 0;
+        margin: 0;
+        /* background: red; */
+    }
+
     header .container {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
         height: 54px;
         transition: all .3s ease;
         overflow: hidden;
@@ -765,6 +774,7 @@ footer {
 
     header .container.open {
         height: 50vh;
+        border-radius:0 0 12px 12px;
     }
 
     header .container nav {
