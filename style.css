@@ -280,12 +280,13 @@ h2 {
     animation: grid 2s linear infinite;
 }
 
-@keyframes grid{
-    from{
+@keyframes grid {
+    from {
         background-position-x: 0;
         background-position-y: 0;
     }
-    to{
+
+    to {
         background-position-x: 2rem;
         background-position-y: 2rem;
     }
@@ -774,7 +775,7 @@ footer {
 
     header .container.open {
         height: 50vh;
-        border-radius:0 0 12px 12px;
+        border-radius: 0 0 12px 12px;
     }
 
     header .container nav {
@@ -827,27 +828,28 @@ footer {
 
     .hero-section h1 {
         font-size: 32px;
-        font-size: clamp(1px, 7vw, 32px);
+        /* font-size: clamp(1px, 7vw, 32px); */
     }
 
     .hero-section p {
         font-size: 12px;
-        font-size: clamp(1px, 5vw, 12px);
+        /* font-size: clamp(1px, 5vw, 12px); */
     }
 
     .hero-section .left-container .cta-btn-container {
-        flex-direction: column;
-        align-items: flex-start;
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+        align-items: center;
         gap: 8px;
     }
 
-    .cta-btn-container .cta-btn {
+    /* .cta-btn-container .cta-btn {
         font-size: clamp(6px, 3vw, 16px);
-    }
+    } */
 
-    .hero-section button:last-child {
+    /* .hero-section button:last-child {
         font-size: clamp(1px, 3vw, 12px);
-    }
+    } */
 
     .hero-section .right-container {
         width: 100%;
@@ -869,8 +871,6 @@ footer {
     .benefit-card {
         justify-self: center;
         max-width: 100%;
-
-
     }
 
     .benefit-card:last-child:nth-child(odd) {
@@ -932,4 +932,5 @@ footer {
     .final-section .cta-container p {
         font-size: 12px;
     }
+
 }
