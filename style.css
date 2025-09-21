@@ -276,6 +276,19 @@ h2 {
         linear-gradient(#012CFF33 2px, transparent 2px),
         linear-gradient(90deg, #012CFF33 2px, transparent 2px);
     background-size: 2rem 2rem;
+
+    animation: grid 2s linear infinite;
+}
+
+@keyframes grid{
+    from{
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+    to{
+        background-position-x: 2rem;
+        background-position-y: 2rem;
+    }
 }
 
 .courses-section::after {
@@ -290,17 +303,6 @@ h2 {
     transform: rotateX(180deg);
 }
 
-/* .courses-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #00000077 0%, #05041ce1 100%);
-    z-index: -1;
-    transform: rotateX(180deg);
-} */
 
 .courses-section .container {
     max-width: 1366px;
@@ -373,7 +375,6 @@ h2 {
     width: 100%;
 }
 
-
 .pricing-section .container {
     display: flex;
     flex-direction: column;
@@ -402,9 +403,9 @@ h2 {
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
 
     width: 100%;
-    max-width: 374px;
+    max-width: 320px;
     min-width: 280px;
-    height: 519px;
+    height: 450px;
     flex-shrink: 0;
 
     outline: 2px solid #000144;
@@ -448,7 +449,7 @@ h2 {
 .pricing-card h3 {
     color: #FFF;
     font-family: Sora;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: normal;
     position: relative;
@@ -467,14 +468,14 @@ h2 {
 .pricing-card .price {
     color: #FFF;
     font-family: Sora;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     line-height: normal;
     white-space: nowrap;
 }
 
 .pricing-card .price span {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .pricing-card .price span:last-child {
@@ -484,7 +485,7 @@ h2 {
 .mid-container p {
     color: #FFF;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: normal;
 }
@@ -492,7 +493,7 @@ h2 {
 .mid-container ul li {
     color: #FFF;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: normal;
 }
@@ -507,6 +508,7 @@ h2 {
     background: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 1rem;
 }
 
 .bot-container button:hover {
@@ -515,6 +517,9 @@ h2 {
     border-radius: 8px;
     padding: 8px 16px;
 }
+
+
+
 
 .final-section {
     /* background: red; */
